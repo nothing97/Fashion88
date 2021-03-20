@@ -1,0 +1,125 @@
+body {
+	overflow: scroll;
+	font-family: 'Roboto', sans-serif;
+	color: ;
+	margin: 10px 80px;
+}
+.item1 { grid-area: myArea; }
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea';
+}
+
+.grid-container > div { text-align: center; position: relative; }
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+a:hover {color: red;}
+img { max-width: 100%; height: auto; }
+
+.fashion1 {position: absolute; font-weight: bold; color: #333; text-align: center; top: 35%; width: 100%; font-size: 3vw }
+.fashion2,.fashion3 {
+	position: absolute; font-weight: bold; color: white; text-align: center; position: absolute; top: 40%; width: 100%; font-size: 2vw
+}
+ul { list-style: none; }
+li {padding: 5px 0px}
+.tag_photos { text-align: center;}
+li:last-child { border-right: none !important; }
+
+.grid-container_list_image {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-container_list_image > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+#Service {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto ;
+}
+#Service > div { padding: 10px 0; }
+.search { grid-column: 1/ 5; }
+
+input[type=text] {
+  width: 54%;
+  padding: 7px 0px;
+  box-sizing: border-box;
+}
+
+label { font-size: 15px; font-weight: bold; }
+button {
+    color: white;
+    background: black;
+    padding: 8px;
+    font-weight: bold;
+}
+span { padding: 0px 10px;}
+.icon {
+    font-size: 2vw;
+    padding: 15px 0px;
+    opacity: 0.8;
+}
+
+#footer ul {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#footer ul li a { font-size: 10px;}
+#footer li {
+display: inline-block;
+border-right: 1px solid black;
+padding: 0px 15px 0px 10px;
+font-size: 15px;
+}
+
+@media screen and (min-width: 980px) {
+	#Service { padding: 10px 40px 10px 40px; }
+	.customer-care {
+		position: relative; font-weight: bold; font-size: 12px; float: right;"
+		font-size: 2vw;
+		}
+	}
+}
+
+.category-product {
+    font-size: 1.5vw; 
+    position: absolute;
+    top: 20%;
+    font-weight: bold; color: #fff;
+}
+
+/*Desktop Screen*/
+@media screen and (max-width: 1280px) {
+	div.category-product {
+  		position: absolute;
+	    top: 20%;
+	    font-weight: bold; color: #fff; 
+	    font-size:1.5vw;
+	}
+}
+/*Tablet Screen*/
+@media screen and (max-width: 720px) {
+	div.category-product {
+		position: absolute;
+	    top: 10%;
+	    font-size: 1.5vw;
+	}
+}
+/*Mobile Screen*/
+@media screen and (max-width: 560px) {
+	#footer>ul>li { border-right: none !important; }
+	.category-product {
+	    position: absolute;
+	    top: 0% !important;
+	    font-size:1.5vw;
+	}
+	.customer-care { font-size: 2vw;}
+	span { padding: 0px;}
+}
